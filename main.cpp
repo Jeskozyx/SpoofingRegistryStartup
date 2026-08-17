@@ -12,7 +12,7 @@
 using namespace std;
 
 // ============================================
-// GLOBAL VARIABLES
+// GLOBAL VARIABLE
 // ============================================
 HHOOK g_hHook = NULL;
 AudioManager* g_audioMgr = nullptr;
