@@ -1,0 +1,3 @@
+#include "resource.h"
+
+IDR_WAV_DEFAULT WAVE "resources/tolong_BPxrsyS.wav"
