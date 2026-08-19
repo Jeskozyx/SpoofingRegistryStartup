@@ -1,11 +1,11 @@
-# KeyboardPrank
+# SpoofingRegistryStartup
 
 A lightweight C++ Windows application for keyboard audio prank effects with a safety exit password and auto-start registry capability.
 
 ## 📁 Struktur Proyek
 
 ```
-KeyboardPrank/
+SpoofingRegistryStartup/
 ├── CMakeLists.txt           # File konfigurasi build CMake
 ├── main.cpp                 # Entry point & Windows message loop
 ├── keyboard_hook.h/.cpp     # Global low-level keyboard hook (WH_KEYBOARD_LL)
@@ -21,7 +21,7 @@ KeyboardPrank/
 ## 🛠️ Cara Kompilasi
 
 ### 1. Menggunakan Visual Studio
-1. Buka folder `KeyboardPrank` di Visual Studio (`Open Folder`).
+1. Buka folder `SpoofingRegistryStartup` di Visual Studio (`Open Folder`).
 2. Visual Studio akan otomatis mendeteksi `CMakeLists.txt`.
 3. Klik **Build** > **Build All** atau tekan `Ctrl + Shift + B`.
 
@@ -35,10 +35,10 @@ cmake --build . --config Release
 
 ### 3. Menggunakan G++ (MinGW Manual)
 ```bash
-g++ -std=c++17 -O2 main.cpp keyboard_hook.cpp audio_manager.cpp password_manager.cpp startup_manager.cpp -o KeyboardPrank.exe -lwinmm -lole32 -mwindows
+g++ -std=c++17 -O2 main.cpp keyboard_hook.cpp audio_manager.cpp password_manager.cpp startup_manager.cpp -o [name_your_exe].exe -lwinmm -lole32 -mwindows
 ```
 
 ## 🔑 Penggunaan & Penghentian
-- Jalankan `KeyboardPrank.exe`. Aplikasi akan berjalan di latar belakang (tanpa jendela konsol).
+- Jalankan `[name_your_exe]`. Aplikasi akan berjalan di latar belakang (tanpa jendela konsol).
 - Setiap tombol yang ditekan akan membunyikan suara prank.
 - Untuk **menghentikan aplikasi**, ketik kata sandi rahasia: **`stop`** kapan saja di keyboard.
